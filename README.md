@@ -13,23 +13,23 @@
    cd llama-fastapi
 ```
 
-Установите зависимости:
+Установка зависимостей:
 ```sh
 pip install -r requirements.txt
 ```
-Запустите сервер:
+Запуск сервера:
 ```sh
 uvicorn app.main:app
 ```
 ### Запуск с Docker
 
-Соберите Docker образ:
+Сбор Docker образа:
 ```sh
 docker build --tag "llama-fast-api" .
 ```
-Запустите контейнер:
+Запуск контейнера:
 ```sh
-docker run -it -p 8000:8000/tcp llama-fast-api 
+docker run -it -p 8000:8000 llama-fast-api 
 ```
 
 
